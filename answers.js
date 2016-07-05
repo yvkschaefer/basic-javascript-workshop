@@ -103,6 +103,7 @@ console.log(multiplyUs("five", 3));
 //sum of the numbers. If the string is ‘subtract’, return the difference. If the string is 
 //‘mult’, return the product. If the string is ‘div’, return the ratio. Otherwise return 0.
 
+/*
 function changeableMath(num1, num2, str){
     if (str === 'add'){
          return num1 + num2;
@@ -127,3 +128,25 @@ console.log(changeableMath(5, 3, 'add'));
 console.log(changeableMath(16, 4, 'div'));
 console.log(changeableMath(16, 5, 'div'));
 console.log(changeableMath("Mathematics"));
+*/
+
+
+
+
+
+
+
+
+
+//Write a function that takes a string and a number, and returns the string repeated that many 
+//number of times. Test your function with various inputs.
+
+function repeatMe(str, num){
+   var i = 0;
+   while(i < num){
+       console.log(str);
+       i++;
+   }
+}
+repeatMe('Cats and', 2);
+repeatMe('Dogs', 4);
