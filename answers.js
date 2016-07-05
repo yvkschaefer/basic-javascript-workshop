@@ -61,6 +61,7 @@ console.log(charAtNumber("", 4));
 //inputs. Write in the comments what happens when you pass something other than a number to your 
 //function.
 
+/*
 function addTwoNumbers(number1,number2) {
     return number1 + number2;
 }
@@ -71,3 +72,24 @@ console.log(addTwoNumbers(4, "cat"));
 
 //when I put a string into my function, it prints the number next to the string. If the inputs are
 // 6, "1", it will return 61. If the inputs are "cat", 3. It will return cat3.
+*/
+
+
+
+
+
+//Write a function that takes two numbers and multiplies them together. Test your function on a 
+//few inputs. Write in your comments what happens when you pass something other than a number to 
+//your function.
+
+function multiplyUs(num1, num2){
+    return num1 * num2;
+}
+console.log(multiplyUs(2,15));
+console.log(multiplyUs(15,true));
+console.log(multiplyUs(false,17));
+console.log(multiplyUs(3,6));
+console.log(multiplyUs("five", 3));
+
+//If you put in a string into this function, it will return NaN at this stage. I suspect the * 
+//multiplication sign is why this happens.
