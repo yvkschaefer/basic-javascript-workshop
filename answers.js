@@ -39,10 +39,24 @@ console.log(lastCharacter());
 //represented by the number. The indexing of number should start at 0. Test your function on a 
 //few inputs, including the empty string.
 
-function stringNumber(str, num) {
-    return str.substring(num - 1, num);
+/*
+Kash's way: better way */
+function charAtNumber(str, number){
+    return str[number];
 }
 
-console.log(stringNumber("Face", 2));
-console.log(stringNumber("Seventeen", 6));
-console.log(stringNumber(""));
+console.log(charAtNumber("Kash", 2));
+console.log(charAtNumber("Koala", 1));
+console.log(charAtNumber("", 4));
+
+
+
+
+
+
+
+
+//Write a function that takes two numbers and adds them together. Test your function on a few 
+//inputs. Write in the comments what happens when you pass something other than a number to your 
+//function.
+
