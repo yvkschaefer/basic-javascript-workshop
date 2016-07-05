@@ -232,7 +232,7 @@ console.log(LongestWord('Hi I am words and I am a sentence'))
 
 
 
-
+/*
 //Q11. Write a function that takes a phrase, and returns the same phrase with every word 
 //capitalized. For example, if you pass your function "hello world", it should return "Hello 
 //World" and if you pass it "HELLO WORLD" or even "HeLLo WoRLD", it will also return 
@@ -251,7 +251,7 @@ function titleCase(str) {
 
 console.log(titleCase('hello wORld'))
 console.log(titleCase('two more DAYS until cirque fest'))
-
+*/
 
 
 
@@ -259,6 +259,21 @@ console.log(titleCase('two more DAYS until cirque fest'))
 
 //Q12. Write a function that takes an array and returns the largest number of the array. Test 
 //your function on a few inputs.
+
+function largestNum(enterArray) {
+    var highest = 0;
+    for (var i = 0; i < enterArray.length; i++) {
+        if (enterArray[i] > highest) {
+            highest = enterArray[i];
+        }
+    }
+    return highest;
+}
+
+console.log(largestNum([16,3]));
+console.log(largestNum([89, 3666, 92, 35]));
+console.log(largestNum([-999, -7665, -9]));
+
 
 
 
