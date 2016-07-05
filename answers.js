@@ -7,4 +7,7 @@ var firstCharacter = function (string){
     return string.substring (0,1);
 }
 
-firstCharacter("Kara");
+console.log(firstCharacter("Kara"));
+console.log(firstCharacter("ara"));
+console.log(firstCharacter(""));
+console.log(firstCharacter());
