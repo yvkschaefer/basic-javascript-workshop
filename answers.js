@@ -276,7 +276,7 @@ console.log(largestNum([-999, -7665, -9]));
 */
 
 
-
+/*
 //Q13. Write a function that takes an array, and returns a filtered array. The filtered array 
 //should only contain the truthy values from the initial array. Hint: there is an array method 
 //called filter that can help you with this :)
@@ -288,10 +288,29 @@ function truths(a){
 
 console.log(truths([NaN, 'seven', 4, 0, 15, false]));
 
+*/
+
+
+
+
+
+
 
 
 //Q14. Write a function that takes an array of numbers, and returns the sum of all the numbers in 
 //the array.
+
+function add(){
+    var sum = 0;
+  for (var i = 0, j = arguments.length; i < j; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+
+console.log(add(1, 17, -7, 5)); //16
+
+
 
 
 
