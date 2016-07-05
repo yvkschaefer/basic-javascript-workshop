@@ -175,7 +175,7 @@ console.log(reverseString(''));
 */
 
 
-
+/*
 //Q9. Write a function that takes a number and returns the factorial of a number. The factorial 
 //of 5 is 5x4x3x2x1. The factorial of 0 is 1. Test your input on a few numbers, including 
 //negative numbers.
@@ -197,6 +197,7 @@ console.log(factorial(0));
 console.log(factorial(-9));
 
 //problematic with my negative numbers, returns as undefined.
+*/
 
 
 
@@ -209,6 +210,26 @@ console.log(factorial(-9));
 //Q10. Write a function that takes a phrase as a string, and returns the longest word in that 
 //phrase. If the phrase contains more than one such word, return the first occurrence. Test your 
 //function on a few inputs.
+
+function LongestWord(str){
+    var wordsArray = str.split(' ');
+    var longest = '';
+    for(var i = 0; i<wordsArray.length; i++) {
+        if (wordsArray[i].length > longest.length) {
+            longest = wordsArray[i];
+        }
+    }
+    return longest;
+}
+
+console.log(LongestWord('Hi I am words and I am a sentence'))
+
+
+
+
+
+
+
 
 
 
@@ -252,3 +273,80 @@ console.log(factorial(-9));
 //through the function you received. You are not allowed to use Array.map for this challenge, 
 //otherwise it would be too easy :)
 
+
+
+
+/*Challenges
+
+Create a branch called challenges off of master. Make a pull request immediately and push your code after doing each exercise
+
+The Fortune Teller
+
+Challenge: create a file called fortune.js in your Cloud9 project. Running this file should output a random quote from a list of 10 different quotes. Make sure to add/commit this file and push it to your GitHub.
+
+The Cow Whisperer
+
+Challenge: create a file called cowsay.js in your Cloud9 project. Running this file should output a cow saying a random fortune. This is reproducing the cowsay command-line app. Make sure to add/commit this file and push it to your GitHub. If the fortune is longer than 30 characters, you have to wrap it on a new line. For extra brownie points, wrap your fortune at the word level instead of the letter level.
+
+The output should look something like this:
+
+If it fits on one line:
+
+ _________________________ 
+< Some motivational quote >
+ ------------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+Two lines:
+
+ ___________________________ 
+/ The quick brown fox jumps \
+\ over the lazy dog         /
+ --------------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+Multiple lines:
+
+ _______________________________ 
+/ The quick brown fox jumps     \
+| over the lazy dog and goes on |
+| to do whatever it is that     |
+\ foxes do in the real world    /
+ ------------------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+The Penniless Gambler
+
+Challenge: create a simple HTML file that will only be used for the purposes of running JavaScript in the browser. Create a guess.js file and add it to a <script> tag of your HTML file. This is simply so you can load your HTML file in the browser and do the challenge: creating a number guessing game.
+
+Generate a random number between 1 and 100. Using the browser functions prompt and alert, ask the user to guess the number. You should give them 4 tries to guess the number. If they guess wrong, tell them if it's higher or lower. If they guess right, congratulate them. Otherwise, give them a message saying what the correct number was, as well as their list of guesses.
+
+The God of Cows
+
+EXTREME challenge: create a file called real-cowsay.js inside your Cloud9 project. This is the only challenge that will require usage of some NodeJS functionality. This program will look more like the regular cowsay. Instead of outputting a random fortune like the previous example, it will either take a string on the command line and output that string (with the cow). If no string is provided on the command line, then your program will use standard input (like the regular cowsay) to get its phrase. Here are a couple of hints that will help you complete this:
+
+You will have to run this javascript file using node. In your command line, this would look like:
+
+node real-cowsay.js "hello world"
+or
+
+fortune | figlet | node real-cowsay.js
+You will need to use the special variable process.argv inside your JavaScript program. NodeJS makes this variable available to you. It is an array containing all the command-line arguments passed to your program. For example, if you run:
+
+node real-cowsay.js "hello world"
+then process.argv[0] will be "hello world".
+
+For the standard input version, you will need to read about process.stdin as well as learn about asynchronous programming. These are things that will be viewed in week 2 of the course, but if you want to complete the challenge you need to do it :) Here is a link to some initial documentation:
+
+https://nodejs.org/api/process.html#process_process_stdin
+
+*/
