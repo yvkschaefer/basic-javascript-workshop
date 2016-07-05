@@ -256,7 +256,7 @@ console.log(titleCase('two more DAYS until cirque fest'))
 
 
 
-
+/*
 //Q12. Write a function that takes an array and returns the largest number of the array. Test 
 //your function on a few inputs.
 
@@ -273,7 +273,7 @@ function largestNum(enterArray) {
 console.log(largestNum([16,3]));
 console.log(largestNum([89, 3666, 92, 35]));
 console.log(largestNum([-999, -7665, -9]));
-
+*/
 
 
 
@@ -281,6 +281,12 @@ console.log(largestNum([-999, -7665, -9]));
 //should only contain the truthy values from the initial array. Hint: there is an array method 
 //called filter that can help you with this :)
 
+function truths(a){
+    var b = a.filter(Boolean);
+    return b;
+}
+
+console.log(truths([NaN, 'seven', 4, 0, 15, false]));
 
 
 
