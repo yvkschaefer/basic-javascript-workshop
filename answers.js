@@ -206,7 +206,7 @@ console.log(factorial(-9));
 
 
 
-
+/*
 //Q10. Write a function that takes a phrase as a string, and returns the longest word in that 
 //phrase. If the phrase contains more than one such word, return the first occurrence. Test your 
 //function on a few inputs.
@@ -223,7 +223,7 @@ function LongestWord(str){
 }
 
 console.log(LongestWord('Hi I am words and I am a sentence'))
-
+*/
 
 
 
@@ -237,6 +237,23 @@ console.log(LongestWord('Hi I am words and I am a sentence'))
 //capitalized. For example, if you pass your function "hello world", it should return "Hello 
 //World" and if you pass it "HELLO WORLD" or even "HeLLo WoRLD", it will also return 
 //"Hello World". Test your function of a few inputs.
+
+function titleCase(str) {  
+  str = str.toLowerCase().split(' ');
+
+  for(var i = 0; i < str.length; i++){
+    str[i] = str[i].split('');
+    str[i][0] = str[i][0].toUpperCase(); 
+    str[i] = str[i].join('');
+  }
+  return str.join(' ');
+}
+
+console.log(titleCase('hello wORld'))
+console.log(titleCase('two more DAYS until cirque fest'))
+
+
+
 
 
 
