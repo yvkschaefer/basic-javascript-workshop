@@ -39,8 +39,8 @@ console.log(lastCharacter());
 //represented by the number. The indexing of number should start at 0. Test your function on a 
 //few inputs, including the empty string.
 
+//Kash's way: better? way
 /*
-Kash's way: better way */
 function charAtNumber(str, number){
     return str[number];
 }
@@ -48,6 +48,7 @@ function charAtNumber(str, number){
 console.log(charAtNumber("Kash", 2));
 console.log(charAtNumber("Koala", 1));
 console.log(charAtNumber("", 4));
+*/
 
 
 
@@ -60,3 +61,13 @@ console.log(charAtNumber("", 4));
 //inputs. Write in the comments what happens when you pass something other than a number to your 
 //function.
 
+function addTwoNumbers(number1,number2) {
+    return number1 + number2;
+}
+
+console.log(addTwoNumbers(2,5));
+console.log(addTwoNumbers(4, 76));
+console.log(addTwoNumbers(4, "cat"));
+
+//when I put a string into my function, it prints the number next to the string. If the inputs are
+// 6, "1", it will return 61. If the inputs are "cat", 3. It will return cat3.
