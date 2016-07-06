@@ -299,7 +299,7 @@ console.log(truths([NaN, 'seven', 4, 0, 15, false]));
 
 //Q14. Write a function that takes an array of numbers, and returns the sum of all the numbers in 
 //the array.
-
+/*
 function add(){
     var sum = 0;
   for (var i = 0, j = arguments.length; i < j; i++) {
@@ -309,6 +309,7 @@ function add(){
 }
 
 console.log(add(1, 17, -7, 5)); //16
+*/
 
 
 
@@ -320,6 +321,23 @@ console.log(add(1, 17, -7, 5)); //16
 //only in one array. For example, with [1,2,3] and [1,2,4,5] the function should return [3,4,5]. 
 //Test your function on different inputs. Hint: you should look up array methods indexOf and 
 //slice.
+
+function diff(arr1, arr2){
+    var unique = [];
+    for(var i = 0; i < arr1.length; i++) {
+        if(arr2.indexOf(arr1[i]) === -1) {
+            unique.push(arr1[i]);
+        }
+    }
+    for (var i = 0; i < arr2.length; i++) {
+        if(arr1.indexOf(arr2[i]) === -1) {
+            unique.push(arr2[i]);
+        }
+    }
+    return unique;
+}
+
+console.log(diff([1,2,3,4],[2,4,5,6]));
 
 
 
